@@ -1,0 +1,287 @@
+html {
+	background: #600000 no-repeat;
+	height: 100%;
+}
+
+body {
+	background: #500000;
+	color: #ffffff;
+	margin: 0 auto;
+	width: 100%;
+	overflow: hidden;
+}
+
+/* LINKS */
+
+a {
+	font-weight: 600;
+	text-decoration: none;
+}
+a:link, a:visited {
+	color: #713800;
+}
+
+a:hover, a:active {
+	outline: none; /* prevents outline in webkit on active links but retains it for tab focus */
+	color: #c66300;
+}
+
+/* TABLES */
+
+table {
+	width: 100%;
+	border: 0;
+}
+
+tr {
+	border: 0;
+}
+
+tr>td:first-child, tr>th:first-child {
+	padding-left: 1.25em;
+}
+
+tr>td:last-child, tr>th:last-child {
+	padding-right: 1.25em;
+}
+
+td, th {
+	line-height: 1.5em;
+	padding: 0.5em 0.6em;
+	text-align: left;
+	vertical-align: top;
+}
+
+th {
+	background-color: #efefef;
+	background-image: -moz-linear-gradient(top, #ffffff, #eaeaea);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #eaeaea));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#ffffff', EndColorStr = '#eaeaea');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#eaeaea')";
+	color: #666666;
+	font-weight: bold;
+	line-height: 1.7em;
+	padding: 0.2em 0.6em;
+}
+
+thead th {
+	white-space: nowrap;
+}
+
+th a {
+	display: block;
+	text-decoration: none;
+}
+
+th a:link, th a:visited {
+	color: #666666;
+}
+
+th a:hover, th a:focus {
+	color: #333333;
+}
+
+th.sortable a {
+	background: no-repeat right;
+	padding-right: 1.1em;
+}
+
+th.asc a {
+	/*
+	background-image: url(../images/skin/sorted_asc.gif);
+	*/
+}
+
+th.desc a {
+	/*
+	background-image: url(../images/skin/sorted_desc.gif);
+	*/
+}
+
+.odd {
+	background: #f7f7f7;
+}
+
+.even {
+	background: #ffffff;
+}
+
+th:hover, tr:hover {
+	background: #800000;
+}
+
+.spinner {
+	background: url("../images/ui/spinner.gif") no-repeat;
+	position: relative;
+	float: right;
+	width: 32px;
+	height: 32px;
+	margin: 0 5px 0 0;
+	padding: 0;
+}
+
+.fontBorder {
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fancyTooltip div {
+	font-style: normal;
+	color: white;
+}
+
+.ui-tooltip {
+	max-width: 353px;
+	width: 353px;
+}
+
+.icons {
+	height: 24px;
+	width: 24px;
+	padding: 0;
+	background: url("../images/ui/icons.png") no-repeat;
+	cursor: pointer;
+	/*
+	border: 1px solid gray;
+	*/
+}
+
+.flag {
+	border: 0;
+	height: 11px;
+	width: 16px;
+	padding: 0;
+	margin: 1px;
+
+	float: left;
+	cursor: pointer;
+}
+
+.flagsArea {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.flagsArea .pl { background: url("../images/ui/flags/pl.png") no-repeat; }
+.flagsArea .en { background: url("../images/ui/flags/en.png") no-repeat; }
+.flagsArea .selected { border: 1px solid white; }
+.flagsArea .notSelected { border: 1px solid #666666; }
+
+.iconMaximize { background-position: -203px -48px; }
+.iconMinimize { background-position: -163px -8px; }
+.iconClose { background-position: -43px -48px; }
+
+.turmoilContainer {
+	min-height:100%;
+	position:relative;
+}
+
+.cursorPointer {
+	cursor: pointer;
+}
+
+.cursorAttack {
+	cursor: url("../images/ui/cursors/cursor_attack.png"), auto;
+}
+
+.cursorHand {
+	cursor: url("../images/ui/cursors/cursor_hand.png"), auto;
+}
+
+.turmoilBody {
+	border: 0;
+	width: 100%;
+	position: relative;
+}
+
+.turmoilHeader {
+	width: 100%;
+	height: 80px;
+	background: url("../images/ui/turmoil-banner.png") 0 0 no-repeat;
+	border: 1px solid black;
+	z-index: 3;
+}
+
+.turmoilFooter {
+	background: #777777;
+	color: #000;
+	height: 32px;
+	position: absolute;
+	width: 100%;
+	z-index: 3;
+
+	background: #2e2e2e;
+	background: -webkit-linear-gradient(top, #2e2e2e 0%, #575757 100%);
+	background: -moz-linear-gradient(top, #2e2e2e 0%, #575757 100%);
+	background: -o-linear-gradient(top, #2e2e2e 0%, #575757 100%);
+	background: -ms-linear-gradient(top, #2e2e2e 0%, #575757 100%);
+	background: linear-gradient(top, #2e2e2e 0%, #575757 100%);
+}
+
+.turmoilFooter a:link, a:visited, a:hover, a:active {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+
+	color: #f3f3f3;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+}
+
+.turmoilFooter a:hover {
+	color: #de1b15;
+}
+
+.footerBlock {
+	margin-top: 8px;
+	margin-left: 5px;
+	float: left;
+
+	color: #cacaca;
+	font-size: 13px;
+}
+
+.shadowTop {
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+	position: absolute;
+	height: 10px;
+	top: -10px;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}
+.shadowLeft {
+	box-shadow: 5px 0 10px rgba(0, 0, 0, 0.8);
+	position: absolute;
+	width: 10px;
+	top: 0;
+	left: -10px;
+	bottom: 0;
+	z-index: 2;
+}
+.shadowRight {
+	box-shadow: -5px 0 10px rgba(0, 0, 0, 0.8);
+	position: absolute;
+	width: 10px;
+	top: 0;
+	right: -10px;
+	bottom: 0;
+	z-index: 2;
+}
+.shadowBottom {
+	box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.8);
+	position: absolute;
+	height: 10px;
+	bottom: -12px;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}
+
+.noSelection {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

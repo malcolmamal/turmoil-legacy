@@ -1,0 +1,86 @@
+wizard: weapon channeling
+
+skillpoint: when you crit your avoid/dodge chance increases
+
+artifacts (mojo etc)
+
+tournaments
+
+pets do 50% more but you make 50% less
+
+weapon proficiency
+
+mana for magic, stamina for physical
+
+taunt
+
+wizards summoning elemental creatures (hydra..)
+
+dual wielding passive: lets you use two weapons but your parry/dodge rating go down when you have two weapons equipped
+
+different drop rate for rares (better have less chance)
+
+aloken type buffs: chance to trigger (offensive when attacking, defensive when defending), can have one active buff of each type (number with how many triggers left)
+
+battle royale type arena / tournaments
+
+classes to pick (act like passives giving you some bonuses, one class active, visible in the ranking)
+
+class: witcher (with skills like igni, etc)
+
+skills on legendary items (like +2 range on leap/charge)
+
+auction house (npc players using it as well)
+
+!!!! todo: add the elemental damage type to the equipment manager
+
+todo: stash/inventory - switch between graphic (icons) and text (item names)
+
+todo: runes and talismans (use skill runes from d3 as icons?)
+
+!!hexmap: http://hexmaps.appspot.com/
+
+todo!!!!!!!!!!!!!!!!: add jQuery('#error') so the ajax errors will be shown somewhere
+
+todo!!!: button to reset/minimize all windows, so a real page reload will not be necessary (in case some window gets messed up)
+
+world map, and scouts that would take some time to search and would locate some dungeons for you on the map (various difficulty, various informations [special encounters? special items?] scouted based on the scout training), get more scouts to scout more, later could invite other players to join and explore the found dungeons with you
+
+@from Marcin:
+1) throttle plugin (zeby nie wywolywac kompletu pewnych funkcji a tylko czesc - np przy resize gdzie tam w setki to idzie)
+2) inicjalizacja drag dropa po skalowaniu (moze pomoc na zle wspolrzedne)
+
+skill/buff icons from LoL? 
+
+luck  (increases crit chance)?
+
+a village (can join a village or start one), library, training halls, crafters, people living, etc (visible on global map), npc players can also make villages or join new ones
+
+various blacksmiths have various recipes and can craft different things
+blacksmith should be able to craft normal stuff but with addons (mystic/enchanter) could make also better (magic, rare..) and later also legendary/set
+
+attribute: critical defence/toughness
+
+TODO: rework, resists not as persistent fields? how to store the item properties? same issue with primary attributes
+
+TODO: don't forget to handle dual wielding correctly (right now dps is summed up)
+
+TODO: sort order for item attributes
+
+TODO: compute weapon damage in tooltip properly (include other stats)
+
+weapon proficiencies (the more one type is used the better it becomes)
+
+TODO: check! when equipping (or later, doing other actions) render the proper response first, later do the database store operations (so the response is fast and the client does not have to wait for the save)
+saving character (in service) takes up to 1sec, should be investigated
+
+TODO: instance window resize issue, perhaps multiplying coordinates by scale (resize) would solve the issue?
+
+TODO: items should drop to the ground and could be pick by going over them (and hover), also a button to pick all (or all of rarity+) after battle ends with success
+
+TODO: show clock in footer (as option, useful for fullscreen mode)
+
+
+crafting:
+diary of master crafter (improves our crafter guys), send to training camps, etc
+all this improves chances for making legendaries

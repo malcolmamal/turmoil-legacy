@@ -1,0 +1,124 @@
+/**
+ * http://designmodo.com/css3-dropdown-menu/
+ */
+
+.flatMenu,
+.flatMenu ul,
+.flatMenu li,
+.flatMenu a {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+.flatMenu {
+	height: 40px;
+
+	background: #5a0208;
+	background: -webkit-linear-gradient(top, #5a0208 0%, #230007 100%);
+	background: -moz-linear-gradient(top, #5a0208 0%, #230007 100%);
+	background: -o-linear-gradient(top, #5a0208 0%, #230007 100%);
+	background: -ms-linear-gradient(top, #5a0208 0%, #230007 100%);
+	background: linear-gradient(top, #5a0208 0%, #230007 100%);
+
+	-webkit-border-radius: 8px 0px 0 0px;
+	-moz-border-radius: 8px 0px 0 0px;
+	border-radius: 8px 0px 0 0px;
+	z-index: 30000;
+}
+
+.flatMenu li {
+	position: relative;
+	list-style: none;
+	float: left;
+	display: block;
+	height: 40px;
+	z-index: 30000;
+}
+
+.flatMenu li a {
+	display: block;
+	padding: 0 14px;
+	margin: 6px 0;
+	line-height: 28px;
+	text-decoration: none;
+
+	border-left: 1px solid #421417;
+	border-right: 1px solid #584048;
+
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+
+	color: #f3f3f3;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+.flatMenu li:first-child a { border-left: none; }
+.flatMenu li:last-child a{ border-right: none; }
+
+.flatMenu li:hover > a { color: #de1b15; }
+
+.flatMenu ul {
+	position: absolute;
+	top: 40px;
+	left: 0;
+
+	opacity: 0;
+	background: #3f0710;
+
+	-webkit-border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+
+	-webkit-transition: opacity .25s ease .1s;
+	-moz-transition: opacity .25s ease .1s;
+	-o-transition: opacity .25s ease .1s;
+	-ms-transition: opacity .25s ease .1s;
+	transition: opacity .25s ease .1s;
+}
+
+.flatMenu li:hover > ul { opacity: 1; }
+
+.flatMenu ul li {
+	height: 0;
+	overflow: hidden;
+	padding: 0;
+
+	-webkit-transition: height .25s ease .1s;
+	-moz-transition: height .25s ease .1s;
+	-o-transition: height .25s ease .1s;
+	-ms-transition: height .25s ease .1s;
+	transition: height .25s ease .1s;
+}
+
+.flatMenu ul li:last-child a { border-bottom: none; }
+
+.flatMenu li:hover > ul li {
+	height: 36px;
+	overflow: visible;
+	padding: 0;
+}
+
+.flatMenu ul li a {
+
+	padding: 4px 6px 4px 40px;
+	margin: 0;
+
+	border: none;
+	border-top: 1px solid #421417;
+	border-bottom: 1px solid #582831;
+
+	display: inline-block;
+	text-wrap: none;
+	white-space: nowrap;
+}
+
+ul.flatMenu { z-index: 30000; position: relative; }

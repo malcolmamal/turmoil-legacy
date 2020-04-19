@@ -1,0 +1,10 @@
+1) In file /target/work/plugins/jquery-ui-1.10.3/grails-app/confJqueryUiPluginResources
+
+comment out everything that is before the main content (modules = ...) and put this code instead:
+def jqver = '1.10.3'
+
+2) Default theme is lightness, we want to switch it to darkness:
+
+url: [plugin: 'jqueryUi', dir: 'jquery-ui/themes/ui-darkness',
+
+

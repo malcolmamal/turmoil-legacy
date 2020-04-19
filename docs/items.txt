@@ -1,0 +1,11 @@
+accuracy
+critical chance
+critical damage
+base damage
+piercing
+bleeding
+chance for double strike
+parry
+range
+spell damage
+penetration

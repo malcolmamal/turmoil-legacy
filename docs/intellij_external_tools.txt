@@ -1,0 +1,11 @@
+1. Go to settings, find "external tools"
+
+2. Add new entry, name it (example: integration test), add to group (putting a name will create new one if it does not exist)
+
+3. Keep all the checkboxes as they are (Sync / open console; all show in...)
+
+4. Set program to: C:\Windows\SysWOW64\cmd.exe
+
+5. Set parameters to: /c grails test-app integration: $FileNameWithoutExtension$ -echoOut --stacktrace --verbose
+
+6. Set working directory to application main directory (example: C:\Development\Java\grails\workspace\turmoil)

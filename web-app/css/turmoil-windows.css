@@ -1,0 +1,233 @@
+.windowIcon {
+	float: left;
+	width: 64px;
+	height: 64px;
+	border: 0;
+	margin: 2px;
+}
+
+.windowIconHover {
+	width: 64px;
+	height: 84px;
+	border: 1px solid black;
+	background-color: white;
+	position: absolute;
+	opacity: 0;
+	border-radius: 6px;
+}
+
+.windowIconHover:hover {
+	opacity: 0.2;
+}
+
+.windowIconText {
+	position: relative;
+	bottom: -64px;
+	width: 64px;
+	text-align: center;
+	font-size: 11px;
+	font-family: Verdana, Monaco, monospace;
+}
+
+.equipmentWindowIcon {
+	background: url('../images/ui/icons/icon_equipment.png') no-repeat;
+}
+
+.stashWindowIcon {
+	background: url('../images/ui/icons/icon_stash.png') no-repeat;
+}
+
+.instanceWindowIcon {
+	background: url('../images/ui/icons/icon_instance.png') no-repeat;
+}
+
+.statsWindowIcon {
+	background: url('../images/ui/icons/icon_stats.png') no-repeat;
+}
+
+.consoleWindowIcon {
+	background: url('../images/ui/icons/icon_console.png') no-repeat;
+}
+
+.ui-resizable-helper {
+	border: 1px dotted #A0A0A0;
+}
+
+.handleContainer {
+	display: block;
+	margin: 0;
+	padding: 0;
+	height: 40px;
+	cursor: move;
+	border: 1px solid black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('../images/ui/window-handle-middle.png');
+}
+
+.handleLeft, .handleRight {
+	float: left;
+	display: block;
+	margin: 0;
+	padding:0;
+	width: 75px;
+	height: 40px;
+}
+
+.handleLeft {
+	background-image: url('../images/ui/window-handle-left.png');
+}
+
+.handleRight {
+	background-image: url('../images/ui/window-handle-right.png');
+}
+
+.handleBox {
+	float: left;
+	display: block;
+	padding: 0;
+	height: 40px;
+	color: #EEEEEE;
+	font: 22px "Palatino Linotype", "Times", serif;
+	line-height: 37px;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin: auto;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.windowWrapper {
+	position: relative;
+}
+
+.windowResizer {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+
+	-webkit-box-shadow: 5px 5px 7px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 5px 5px 7px 0px rgba(50, 50, 50, 0.75);
+	box-shadow: 5px 5px 7px 0px rgba(50, 50, 50, 0.75);
+}
+
+.windowContent {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	border: 1px solid black;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.windowContentInner {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+
+.equipmentHandleContainer {
+	width: 800px;
+}
+
+.equipmentHandleBox {
+	width: 650px;
+}
+
+.equipmentWindowResizer {
+	width: 800px;
+	height: 870px;
+}
+
+.equipmentWindowContent {
+	width: 800px;
+	height: 830px;
+}
+
+
+.stashHandleContainer {
+	width: 500px;
+}
+
+.stashHandleBox {
+	width: 350px;
+}
+
+.stashWindowResizer {
+	width: 500px;
+	height: 740px;
+}
+
+.stashWindowContent {
+	width: 500px;
+	height: 700px;
+}
+
+
+.instanceHandleContainer {
+	width: 650px;
+}
+
+.instanceHandleBox {
+	width: 500px;
+}
+
+.instanceWindowResizer {
+	width: 650px;
+	height: 590px;
+}
+
+.instanceWindowContent {
+	width: 650px;
+	height: 550px;
+}
+
+
+.statsHandleContainer {
+	width: 300px;
+}
+
+.statsHandleBox {
+	width: 150px;
+}
+
+.statsWindowResizer {
+	width: 300px;
+	height: 740px;
+}
+
+.statsWindowContent {
+	width: 300px;
+	height: 700px;
+}
+
+
+.consoleHandleContainer {
+	width: 600px;
+}
+
+.consoleHandleBox {
+	width: 450px;
+}
+
+.consoleWindowResizer {
+	width: 600px;
+	height: 200px;
+}
+
+.consoleWindowContent {
+	width: 600px;
+	height: 160px;
+}

@@ -1,0 +1,2 @@
+1. <g:logMsg level="debug">Grails rocks!</g:logMsg>
+

@@ -1,0 +1,9 @@
+[merge]
+	tool = bc3
+[mergetool "bc3"]
+	path = C:\\Apps\\Beyond Compare 3\\bcomp.exe
+	keepBackup = false
+
+git config --global diff.tool bc3
+git config --global diff.tool.bc3.path "C:\Apps\Beyond Compare 3\BComp.exe"
+git config --global mergetool.keepBackup false
